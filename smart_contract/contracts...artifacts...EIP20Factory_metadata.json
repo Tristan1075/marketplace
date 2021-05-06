@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.4.21+commit.dfe3193c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_initialAmount",
+						"type": "uint256"
+					},
+					{
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"name": "_decimals",
+						"type": "uint8"
+					},
+					{
+						"name": "_symbol",
+						"type": "string"
+					}
+				],
+				"name": "createEIP20",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "created",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isEIP20",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "EIP20ByteCode",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenContract",
+						"type": "address"
+					}
+				],
+				"name": "verifyEIP20",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EIP20Factory.sol": "EIP20Factory"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EIP20.sol": {
+			"keccak256": "0x14be90a0a1ed31dffdc899168aab44f434299a6fc1221229a9f395eeb67a072b",
+			"urls": [
+				"bzzr://6a001b83b3566ff59fa7b37b90522dc66b54fc4fd0232445bac4e7cb633bf5ae"
+			]
+		},
+		"contracts/EIP20Factory.sol": {
+			"keccak256": "0xff52652faedf4c13a2ab7ac241b3e99e914612d548a095f1e87f521465938986",
+			"urls": [
+				"bzzr://f4889cbb1ad39a32bac2b119b0cf0a4b9a2c09906ff2b021d57f3185d06b4830"
+			]
+		},
+		"contracts/EIP20Interface.sol": {
+			"keccak256": "0x1802fa6bf368e85ff27b7f351291951487bedfec818a68258d5358ea62b5bb91",
+			"urls": [
+				"bzzr://4d16619e06d481cc9df54143d1f797552866677ee598a7ee187052b31f58ce2d"
+			]
+		}
+	},
+	"version": 1
+}
